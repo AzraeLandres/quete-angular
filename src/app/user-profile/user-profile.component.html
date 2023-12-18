@@ -1,8 +1,14 @@
-<img [src]="user.photo" alt="" />
-<p>Nom : {{ user.name }}</p>
-<p>Prénom : {{ user.firstName }}</p>
-<p>{{ user.quote }}</p>
-<p [hidden]="user.hidden">J'ai {{ user.age }} ans!</p>
-<input type="text" [(ngModel)]="user.quote" />
+<div class="card">
+  <img [src]="user.photo" alt="" />
+  <div class="cardDetails">
+    <p>Nom : {{ user.name }}</p>
+    <p>Prénom : {{ user.firstName }}</p>
+    <p>{{ user.quote }}</p>
+    <p [hidden]="user.hidden">J'ai {{ user.age }} ans!</p>
+    <input type="text" [(ngModel)]="user.quote" />
 
-<button type="button" (click)="user.showAge()">Afficher/Masquer mon âge</button>
+    <button type="button" (click)="user.showAge()">
+      Afficher/Masquer mon âge
+    </button>
+  </div>
+</div>
