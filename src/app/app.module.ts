@@ -11,7 +11,13 @@ import { MenuComponent } from './menu/menu.component';
 import { CoupClassiqueComponent } from './coup-classique/coup-classique.component';
 
 @NgModule({
-  declarations: [AppComponent, UserProfileComponent, SignupComponent, MenuComponent, CoupClassiqueComponent],
+  declarations: [
+    AppComponent,
+    UserProfileComponent,
+    SignupComponent,
+    MenuComponent,
+    CoupClassiqueComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
