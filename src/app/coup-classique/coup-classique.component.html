@@ -1,0 +1,4 @@
+<h1 [ngClass]="{ title: isAdmin }">Bonjour !</h1>
+<button>View</button>
+<button *ngIf="isAdmin">Edit</button>
+<button (click)="makeAdmin()">Admin button</button>

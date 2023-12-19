@@ -8,9 +8,10 @@ import { SignupComponent } from './signup/signup.component';
 import { RouterModule, Routes } from '@angular/router';
 import { routes } from './app-routing.module';
 import { MenuComponent } from './menu/menu.component';
+import { CoupClassiqueComponent } from './coup-classique/coup-classique.component';
 
 @NgModule({
-  declarations: [AppComponent, UserProfileComponent, SignupComponent, MenuComponent],
+  declarations: [AppComponent, UserProfileComponent, SignupComponent, MenuComponent, CoupClassiqueComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
