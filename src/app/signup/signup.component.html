@@ -16,6 +16,7 @@
   <!-- Message d'erreurs d'email-->
   <div *ngIf="myForm.submitted && email.invalid">
     <span *ngIf="email.errors?.['required']">L'adresse email est requise.</span>
+    <span *ngIf="email.errors?.['invalid']">L'adresse email est invalide.</span>
   </div>
 
   <fieldset>
