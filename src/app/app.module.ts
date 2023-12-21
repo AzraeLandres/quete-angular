@@ -9,6 +9,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { routes } from './app-routing.module';
 import { MenuComponent } from './menu/menu.component';
 import { CoupClassiqueComponent } from './coup-classique/coup-classique.component';
+import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia.component';
+import { ParentListComponent } from './parent-list/parent-list.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { CoupClassiqueComponent } from './coup-classique/coup-classique.componen
     SignupComponent,
     MenuComponent,
     CoupClassiqueComponent,
+    CreateOnomatopiaComponent,
+    ParentListComponent,
   ],
   imports: [
     BrowserModule,

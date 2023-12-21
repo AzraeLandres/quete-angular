@@ -1,0 +1,17 @@
+import { Component, EventEmitter, Output } from '@angular/core';
+
+@Component({
+  selector: 'app-create-onomatopia',
+  templateUrl: './create-onomatopia.component.html',
+  styleUrl: './create-onomatopia.component.css',
+})
+export class CreateOnomatopiaComponent {
+  constructor() {}
+  newOnomatopia: string = '';
+  @Output()
+  sendOnomatopiaToParent: EventEmitter<string> = new EventEmitter();
+
+  createOnomatopia(): void {
+    this.sendOnomatopiaToParent.emit(this.newOnomatopia);
+  }
+}
