@@ -10,11 +10,17 @@
       #email="ngModel"
       name="email"
       id="email"
+      email="true"
     />
   </fieldset>
 
   <!-- Message d'erreurs d'email-->
-  <div *ngIf="myForm.submitted && email.invalid">
+   <div *ngIf="myForm.submitted && email.invalid">
+
+    <span *ngIf="email.errors?.['email']">L'adresse email est invalide.</span>
+    
+  </div>
+  <div *ngIf="myForm.submitted && myForm.invalid">
     <span *ngIf="email.errors?.['required']">L'adresse email est requise.</span>
   </div>
 
